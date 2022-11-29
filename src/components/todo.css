@@ -1,0 +1,148 @@
+body {
+  background-image: url("./Media/tea\ back.jpg");
+  background-repeat: no-repeat;
+  /* background-size: 100%; */
+  background-size: cover;
+  margin: 0%;
+  /* background-attachment: fixed; */
+  height: 100vh;
+}
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1;
+  margin: auto;
+}
+.main {
+  background-color: rgba(0, 0, 0, 0.24);
+  width: 100vw;
+  text-align: center;
+  height: 100vh;
+  max-height: auto;
+  max-width: 600px;
+}
+.head {
+  align-items: center;
+  justify-content: center;
+  /* width: 300px; */
+}
+.todo-list {
+  /* border: 1px solid red; */
+  margin: 5px;
+  width: auto;
+  overflow-y: scroll;
+  /* overflow-x:hidden  ;  */
+  height: 74vh;
+  scroll-behavior: smooth;
+  overflow: auto;
+}
+
+.todo-list::-webkit-scrollbar {
+  border-radius: 100px;
+  background-color: rgba(26, 26, 26, 0);
+  width: 3px;
+}
+.todo-list::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255);
+  width: 10px;
+}
+
+.todos {
+  color: white;
+  margin: 2px;
+}
+
+.todo-inp {
+  width: 270px;
+  font-size: 18px;
+  border: none;
+  border-bottom: 2px solid white;
+  padding: 10px;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+
+  background-color: rgba(255, 255, 255, 0.158);
+}
+
+.add-but {
+  margin-top: 10px;
+  width: 150px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.61);
+  padding: 10px;
+  color: white;
+  border-bottom: 2px solid white;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  font-size: 17px;
+}
+
+@media (min-width: 300px) and (max-width: 460px) {
+ .todos{
+    font-size: 20px;
+ }
+ .wrap {
+    padding: 0px
+ };
+    .main {
+    background-color: rgba(0, 0, 0, 0.24);
+    width: 100vw;
+    text-align: center;
+    height: 100vh;
+  }
+  .head {
+    align-items: center;
+    
+    justify-content: center;
+    /* width: 300px; */
+  }
+  .todo-list {
+    margin: 5px;
+    width: auto;
+    overflow-y: scroll;
+    height: 74vh;
+    scroll-behavior: smooth;
+    overflow: auto;
+  }
+
+  .todo-list::-webkit-scrollbar {
+    border-radius: 100px;
+    background-color: rgba(26, 26, 26, 0);
+    width: 3px;
+  }
+  .todo-list::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255);
+    width: 10px;
+  }
+
+  .todos {
+    color: white;
+    margin: 2px;
+  }
+
+  .todo-inp {
+    width: 55vw;
+    font-size: 14px;
+    border: none;
+    border-bottom: 2px solid white;
+    padding: 7px;
+    padding-left: 10px;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    background-color: rgba(255, 255, 255, 0.158);
+  }
+
+  .add-but {
+    margin-top: 10px;
+    width: 28vw;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.61);
+    padding: 7px;
+    font-size: 14px;
+    color: white;
+    border-bottom: 2px solid white;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+  }
+}
